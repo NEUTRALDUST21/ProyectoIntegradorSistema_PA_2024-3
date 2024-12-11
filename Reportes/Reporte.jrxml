@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89af2177-b414-4e5c-8e20-07fde3921d80">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ConectorTicket"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="652"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="348"/>
+	<parameter name="totalticket" class="java.lang.String"/>
+	<parameter name="articulostotal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<field name="precio" class="java.lang.String">
+		<fieldDescription><![CDATA[precio]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.String">
+		<fieldDescription><![CDATA[total]]></fieldDescription>
+	</field>
+	<field name="idticket" class="java.lang.String">
+		<fieldDescription><![CDATA[idticket]]></fieldDescription>
+	</field>
+	<field name="iva" class="java.lang.String">
+		<fieldDescription><![CDATA[iva]]></fieldDescription>
+	</field>
+	<field name="hora" class="java.lang.String">
+		<fieldDescription><![CDATA[hora]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.String">
+		<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+	</field>
+	<field name="producto" class="java.lang.String">
+		<fieldDescription><![CDATA[producto]]></fieldDescription>
+	</field>
+	<field name="idproducto" class="java.lang.String">
+		<fieldDescription><![CDATA[idproducto]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement x="238" y="7" width="152" height="13" uuid="229042b8-08cd-4f07-91be-8cb7f4dd1d0c"/>
+				<text><![CDATA[Tienda de Abarrotes Don Juan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="29" width="100" height="15" uuid="65e85254-84a9-44b0-963d-7d26611326c1"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="26" width="100" height="20" uuid="a4d7c63f-3de0-4d79-946f-efda5b13a53e"/>
+				<textFieldExpression><![CDATA[$F{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="70" width="102" height="19" uuid="8316f74d-80f1-493a-899c-d787f5da6d3c"/>
+				<textFieldExpression><![CDATA[$F{idticket}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="7" y="15" width="63" height="15" uuid="6cc47a1d-fe52-4bad-8868-7d51b1812605"/>
+				<text><![CDATA[Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="13" width="70" height="15" uuid="b39ef42d-539d-485b-bd20-948b5d046945"/>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="15" width="50" height="15" uuid="a2574174-41e5-4b40-b58d-147d23c99a93"/>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="12" width="39" height="18" uuid="58685b2f-4f49-40d8-b059-cdaa25b8f6c3"/>
+				<text><![CDATA[Iva]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="12" width="46" height="16" uuid="f36e9325-444e-4a45-9be6-8089a1062b61"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="30" width="59" height="18" uuid="eaec5b2d-813b-4eb4-befe-80e8f6856ff2"/>
+				<textFieldExpression><![CDATA[$F{producto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="29" width="59" height="17" uuid="2ff8344d-a2c6-4921-9059-9a6bd5687358"/>
+				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="23" width="58" height="17" uuid="675b04c2-84ac-420e-98c1-58010f5bbcb5"/>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="27" width="38" height="18" uuid="2e77bbee-9659-46c1-97eb-ed9122d069ba"/>
+				<textFieldExpression><![CDATA[$F{iva}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="21" width="46" height="16" uuid="01397aec-a095-4c9d-b371-5e7255a48081"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="14" width="110" height="18" uuid="a0dd6cf9-1a85-4e68-857d-d97ab7941ddb"/>
+				<text><![CDATA[Cantidad de Productos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="15" width="50" height="19" uuid="cb6cd471-3f73-4c2a-8aef-890c6e3e0b83"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="478" y="14" width="90" height="21" uuid="1eb7a9fc-8ecc-40c5-a84e-dfdd0847b14f"/>
+				<textFieldExpression><![CDATA[$P{totalticket}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="12" width="80" height="23" uuid="5d54286d-b1aa-4d51-9d49-6e07ae8b5fbb"/>
+				<textFieldExpression><![CDATA[$P{articulostotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
