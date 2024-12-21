@@ -1,3 +1,4 @@
+
 package Modelo;
 
 import java.io.Serializable;
@@ -45,3 +46,5 @@ public class Categoria implements Serializable {
 	}
 	
 }
+
+

@@ -1,3 +1,4 @@
+
 package Controlador;
 
 import java.sql.Connection;
@@ -30,3 +31,10 @@ public class CategoriasBD {
 	}
 
 }
+
+
+
+
+
+
+

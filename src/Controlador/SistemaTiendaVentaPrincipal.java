@@ -1,9 +1,14 @@
+
 package Controlador;
+
+import javax.swing.JFrame;
 
 import Vista.Entrada;
 import Vista.Sesion;
 
-public class SistemaTiendaVentaPrincipal {
+public class SistemaTiendaVentaPrincipal{
+	public SistemaTiendaVentaPrincipal() {
+	}
 	
 	public static void main(String[] args) {
 		Entrada entrada = new Entrada();
@@ -25,3 +30,5 @@ public class SistemaTiendaVentaPrincipal {
 	}
 
 }
+
+

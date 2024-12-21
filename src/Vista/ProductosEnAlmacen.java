@@ -1,3 +1,4 @@
+
 package Vista;
 
 import javax.swing.JFrame;
@@ -17,7 +18,6 @@ import Modelo.Categoria;
 import Modelo.ListaCategorias;
 import Modelo.ListaProductos;
 import Modelo.Producto;
-
 import java.awt.Color;
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,7 +34,6 @@ import javax.swing.SwingConstants;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
-
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
